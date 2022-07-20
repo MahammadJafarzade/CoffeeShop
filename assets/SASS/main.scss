@@ -5,8 +5,10 @@
 }
 html,body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height: 4000px;
     scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 header{
     position: sticky;
@@ -129,9 +131,7 @@ header{
 }
 #hamburger-input{
   display: none;
-  
 }
-
 #hamburger-menu {
     position: fixed;
     top: 20px;
@@ -152,7 +152,6 @@ header{
       rgb(48, 32, 2) 80%, rgb(48, 32, 2) 100%
     );
 }
-
 #hamburger-menu #sidebar-menu {
     margin-top: 34px;
     visibility: hidden;
@@ -166,16 +165,13 @@ header{
     padding: 0px 10px;
     box-sizing: border-box;
 }
-
 #hamburger-menu ul {
   padding-left: 0px;
 }
-
 #hamburger-menu li {
   list-style-type: none;
   line-height: 3rem;
 }
-
 #hamburger-menu a {
   color: wheat;
   font-size: 1.3rem;
@@ -185,16 +181,12 @@ header{
     transition: 0.4s;
     padding-left: 5px;
     border-left:3px solid  wheat;
+    }
 }
-}
-
 #hamburger-input:checked + #hamburger-menu #sidebar-menu {
     visibility: visible;
     left: 0;
 }
-
-
-
 @media screen and (max-width: 768px) {
     .navigationbar{
         justify-content: flex-end;
@@ -252,7 +244,6 @@ header{
   height: 50px;
   padding: 1em;  
 }
-
 .menu {
   display: flex;
   flex-direction: row;
@@ -261,12 +252,10 @@ header{
   padding: 0;
   z-index: 20;
 }
-
 .menu > li {
   margin: 0 1rem;
   overflow: hidden;
 }
-
 .menu-button-container {
   display: none;
   height: 100%;
@@ -276,11 +265,9 @@ header{
   justify-content: center;
   align-items: center;
 }
-
 #menu-toggle {
   display: none;
 }
-
 .menu-button,
 .menu-button::before,
 .menu-button::after {
@@ -292,26 +279,21 @@ header{
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
 }
-
 .menu-button::before {
   content: '';
   margin-top: -8px;
 }
-
 .menu-button::after {
   content: '';
   margin-top: 8px;
 }
-
 #menu-toggle:checked + .menu-button-container .menu-button::before {
   margin-top: 0px;
   transform: rotate(405deg);
 }
-
 #menu-toggle:checked + .menu-button-container .menu-button {
   background: rgba(255, 255, 255, 0);
 }
-
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
@@ -328,7 +310,6 @@ header{
         }
     }
 }
-
 @media (max-width: 768px) {
     header{
         background-color: #c19942;
@@ -374,7 +355,6 @@ header{
     background-color: black;
   }
 }
-
 #discounts{
     padding: 100px 0 ;
 }
@@ -386,6 +366,7 @@ header{
     justify-content: space-evenly;
 }
 .discount{
+    transition: 0.7s ease;
     img{
         max-width: 100%;
         border-radius: 15px;
@@ -397,8 +378,7 @@ header{
     }
     &:hover{
         opacity: 0.7;
-        transition: 0.7s ease;
-        transform: scale(0.9);    
+        transform: scale(0.9);   
     }
 }
 .description{
@@ -418,15 +398,14 @@ header{
         width: fit-content;
     }
 }
-
 .gifts{
+    transition: 0.7s;
     img{
         max-width: 100%;
         border-radius: 15px;
     }
     &:hover{
         opacity: 0.7;
-        transition: 0.7s;
         transform: scale(0.9);    
     }
 }
@@ -446,8 +425,7 @@ header{
     h2{
         padding-left: 10px;
         width: fit-content;
-    }
-    
+    } 
 }
 #menu{
     padding: 30px 0;
@@ -457,7 +435,7 @@ header{
     background-attachment: fixed;
     height: fit-content;
 }
-.menu{
+.fullmenu{
     display: block;
     text-align: center;
     font-style: oblique;
@@ -496,7 +474,7 @@ header{
         padding: 10px 0;
     }
 }
-.menu-btn{
+.fullmenu-button{
     display: flex;
     justify-content: center;
 }
@@ -507,19 +485,22 @@ header{
     border:1px solid #c19942;
     font-weight: 700;
     font-size: 20px;
+    transition: all 0.8s ease;
     &:hover{
         background-color: #c19942;
-        transition: 0.8s;
+        text-decoration: none;
         a{
+            text-decoration: none;
             color: #fff;
         }
     }
     a{
+        text-decoration: none;
         color: wheat;
     }
 }
 @media screen and (max-width:768px) {
-    .menu{
+    .fullmenu{
         position: relative;
     }
     .inner-menu{
@@ -528,6 +509,228 @@ header{
     .opportunities{
         display: block;
         width: 100%;
+    } 
+
+    .discount{
+        max-width: 100%;        
     }
-    
+    .gifts{
+        max-width: 100%;        
+        padding-top: 10px;
+    }
+}
+.shop-title{
+    h2,h4{
+        text-align: center;
+        font-style: oblique;
+        color: #e5a418;
+        padding-bottom: 10px;
+        
+    }
+    padding: 50px 0;
+}
+.shop-slide{
+    img{
+        border-radius: 12px;
+        box-shadow: 2px 4px 2px 0 gray;
+        width: 100%;
+        padding: 5px 0;
+    }
+}
+.slick-slide{
+    width: 0;
+}
+.allblogs{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.blogs{
+    background-color: #eae7de;
+    padding: 50px 0;
+}
+.blog-title{
+    text-align: center;
+    font: oblique;
+}
+.blog-info{
+    background-color: white;
+    border-radius: 18px;
+    padding: 0;
+}
+.blog-image{
+    img{
+        border-radius: 18px;
+        width: 100%;
+        padding: 8px 0;
+    }
+}
+.blog-description{
+    padding-left: 6px;
+    i{
+        padding-right: 8px;
+    }
+    p{
+        margin: 20px 0;
+        a{
+            padding: 10px 0;
+            color: #e5a418;
+            font-size: 25px;
+            &:hover{
+                text-decoration: none;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+.future{
+    padding: 30px 0;
+    background-image: url('/assets/Img/banner4-1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.somefuture{
+    h2{
+        color: #e5a418;
+        font:oblique;
+        text-transform: uppercase;
+    }
+    p{
+        color: #816E6E;
+        font-size: 17px;
+    }
+}
+.allfutures{
+    display: flex;
+}
+.future-description{
+    padding-top: 20px;
+}
+.future-title{
+    h2{
+        padding: 20px 0;
+        color: #e5a418;
+    }
+}
+.future-content{
+    p{
+        color: #816E6E;
+    }
+    text-align: center;
+}
+.social-media{
+    padding: 20px 0;
+}
+.media-title{
+    text-align: center;
+    h2{
+        color: #e5a418;
+    }
+    p{
+        color: #816E6E;
+    }
+}
+.media-info{
+    padding: 5px 0;
+}
+.media-image{
+    position: relative;
+img{
+    transition: 0.8s;
+}
+    &:hover{
+        transform: rotate(360deg);
+        img{
+            transform: scale(0.9);
+        }
+            .media-insta{
+                display: block;
+                opacity: 0.9;
+
+        }
+    }
+}
+.media-insta{
+    display: none;
+    background-image: url('/assets/Img/gradient-bg.png');
+    position:absolute;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 20px;
+    left: 60px;
+    transition: 0.8s;
+    font-size: 40px;
+    border-radius: 12px;   
+    padding: 65px;
+    color: white;
+    &:hover{
+        transform: rotate(360deg);
+        text-decoration: none;
+    }
+}
+@media screen and (max-width:768px) {
+    .allfutures{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .d-flex{
+        flex-direction: column;
+        justify-content: space-around;
+        
+        width: 100%;
+    }
+   
+}
+.footer{
+    background-image: url('/assets/Img/footer-bg.jpg');
+    background-attachment: fixed;
+    padding: 20px 0;
+}
+.d-flex{
+    display: flex;
+}
+.info-despina{
+    color: white;
+    ul{
+        display: flex;
+        li{
+            list-style-type: none;
+            i{
+                font-size: 15px;
+                color: #c7a17a;
+                margin: 0 5px;         
+               }
+        }
+    }
+}
+.contact-despina{
+    h4{
+        color: #c7a17a;
+        font-size: 25px;
+    }
+    li{
+        list-style-type: none;
+        color: white;  
+      }
+}
+.openning-hour{
+    h4{
+        color: #c7a17a;
+        font-size: 25px;
+    }
+   li{
+      list-style-type: none;
+      color: white;  
+    }
+}
+.despina-video {
+    h4{
+        color: #c7a17a;
+        font-size: 25px;
+    }
+    img{
+        margin-top: 10px;
+    }
 }

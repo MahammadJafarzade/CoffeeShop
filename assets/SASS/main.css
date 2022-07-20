@@ -6,8 +6,10 @@
 
 html, body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  height: 4000px;
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 header {
@@ -366,6 +368,9 @@ header {
   justify-content: space-evenly;
 }
 
+.discount {
+  transition: 0.7s ease;
+}
 .discount img {
   max-width: 100%;
   border-radius: 15px;
@@ -375,7 +380,6 @@ header {
 }
 .discount:hover {
   opacity: 0.7;
-  transition: 0.7s ease;
   transform: scale(0.9);
 }
 
@@ -399,13 +403,15 @@ header {
   width: fit-content;
 }
 
+.gifts {
+  transition: 0.7s;
+}
 .gifts img {
   max-width: 100%;
   border-radius: 15px;
 }
 .gifts:hover {
   opacity: 0.7;
-  transition: 0.7s;
   transform: scale(0.9);
 }
 
@@ -441,7 +447,7 @@ header {
   height: fit-content;
 }
 
-.menu {
+.fullmenu {
   display: block;
   text-align: center;
   font-style: oblique;
@@ -485,7 +491,7 @@ header {
   padding: 10px 0;
 }
 
-.menu-btn {
+.fullmenu-button {
   display: flex;
   justify-content: center;
 }
@@ -497,20 +503,23 @@ header {
   border: 1px solid #c19942;
   font-weight: 700;
   font-size: 20px;
+  transition: all 0.8s ease;
 }
 .fullmenu-btn:hover {
   background-color: #c19942;
-  transition: 0.8s;
+  text-decoration: none;
 }
 .fullmenu-btn:hover a {
+  text-decoration: none;
   color: #fff;
 }
 .fullmenu-btn a {
+  text-decoration: none;
   color: wheat;
 }
 
 @media screen and (max-width: 768px) {
-  .menu {
+  .fullmenu {
     position: relative;
   }
   .inner-menu {
@@ -520,4 +529,233 @@ header {
     display: block;
     width: 100%;
   }
+  .discount {
+    max-width: 100%;
+  }
+  .gifts {
+    max-width: 100%;
+    padding-top: 10px;
+  }
+}
+.shop-title {
+  padding: 50px 0;
+}
+.shop-title h2, .shop-title h4 {
+  text-align: center;
+  font-style: oblique;
+  color: #e5a418;
+  padding-bottom: 10px;
+}
+
+.shop-slide img {
+  border-radius: 12px;
+  box-shadow: 2px 4px 2px 0 gray;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.slick-slide {
+  width: 0;
+}
+
+.allblogs {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.blogs {
+  background-color: #eae7de;
+  padding: 50px 0;
+}
+
+.blog-title {
+  text-align: center;
+  font: oblique;
+}
+
+.blog-info {
+  background-color: white;
+  border-radius: 18px;
+  padding: 0;
+}
+
+.blog-image img {
+  border-radius: 18px;
+  width: 100%;
+  padding: 8px 0;
+}
+
+.blog-description {
+  padding-left: 6px;
+}
+.blog-description i {
+  padding-right: 8px;
+}
+.blog-description p {
+  margin: 20px 0;
+}
+.blog-description p a {
+  padding: 10px 0;
+  color: #e5a418;
+  font-size: 25px;
+}
+.blog-description p a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.future {
+  padding: 30px 0;
+  background-image: url("/assets/Img/banner4-1.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.somefuture h2 {
+  color: #e5a418;
+  font: oblique;
+  text-transform: uppercase;
+}
+.somefuture p {
+  color: #816E6E;
+  font-size: 17px;
+}
+
+.allfutures {
+  display: flex;
+}
+
+.future-description {
+  padding-top: 20px;
+}
+
+.future-title h2 {
+  padding: 20px 0;
+  color: #e5a418;
+}
+
+.future-content {
+  text-align: center;
+}
+.future-content p {
+  color: #816E6E;
+}
+
+.social-media {
+  padding: 20px 0;
+}
+
+.media-title {
+  text-align: center;
+}
+.media-title h2 {
+  color: #e5a418;
+}
+.media-title p {
+  color: #816E6E;
+}
+
+.media-info {
+  padding: 5px 0;
+}
+
+.media-image {
+  position: relative;
+}
+.media-image img {
+  transition: 0.8s;
+}
+.media-image:hover {
+  transform: rotate(360deg);
+}
+.media-image:hover img {
+  transform: scale(0.9);
+}
+.media-image:hover .media-insta {
+  display: block;
+  opacity: 0.9;
+}
+
+.media-insta {
+  display: none;
+  background-image: url("/assets/Img/gradient-bg.png");
+  position: absolute;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 20px;
+  left: 60px;
+  transition: 0.8s;
+  font-size: 40px;
+  border-radius: 12px;
+  padding: 65px;
+  color: white;
+}
+.media-insta:hover {
+  transform: rotate(360deg);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .allfutures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .d-flex {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+.footer {
+  background-image: url("/assets/Img/footer-bg.jpg");
+  background-attachment: fixed;
+  padding: 20px 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.info-despina {
+  color: white;
+}
+.info-despina ul {
+  display: flex;
+}
+.info-despina ul li {
+  list-style-type: none;
+}
+.info-despina ul li i {
+  font-size: 15px;
+  color: #c7a17a;
+  margin: 0 5px;
+}
+
+.contact-despina h4 {
+  color: #c7a17a;
+  font-size: 25px;
+}
+.contact-despina li {
+  list-style-type: none;
+  color: white;
+}
+
+.openning-hour h4 {
+  color: #c7a17a;
+  font-size: 25px;
+}
+.openning-hour li {
+  list-style-type: none;
+  color: white;
+}
+
+.despina-video h4 {
+  color: #c7a17a;
+  font-size: 25px;
+}
+.despina-video img {
+  margin-top: 10px;
 }/*# sourceMappingURL=main.css.map */

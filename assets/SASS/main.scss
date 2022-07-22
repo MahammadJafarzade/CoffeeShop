@@ -385,16 +385,16 @@ header{
     display: flex;
     position: absolute;
     bottom: 0px;
-    left: 35px;
+    margin-left: 3px;
     width: auto;
     color: white;
     font-style: oblique;
     i{
-        font-size: 35px;
+        font-size: 30px;
         color: #c19942;
+        margin-left: 4px;
     }
     h2{
-        padding-left: 3px;
         width: fit-content;
     }
 }
@@ -408,24 +408,6 @@ header{
         opacity: 0.7;
         transform: scale(0.9);    
     }
-}
-.descript{
-    display: flex;
-    position: absolute;
-    margin-left: 10px;
-    bottom: 0;
-    left: 35px;
-    width: auto;
-    color: white;
-    font-style: oblique;
-    i{
-        font-size: 35px;
-        color: #c19942;
-    }
-    h2{
-        padding-left: 10px;
-        width: fit-content;
-    } 
 }
 #menu{
     padding: 30px 0;
@@ -461,18 +443,8 @@ header{
 }
 .inner-menu{
     display: flex;
-    padding: 10px 0;
+    padding: 20px 0;
     justify-content: space-between;
-}
-.items-left{
-    img{
-        padding: 10px 0;
-    }
-}
-.items-right{
-    img{
-        padding: 10px 0;
-    }
 }
 .fullmenu-button{
     display: flex;
@@ -539,10 +511,6 @@ header{
 }
 .slick-slide{
     width: 0;
-}
-.allblogs{
-    padding-right: 25px;
-    padding-left: 25px;
 }
 .blogs{
     background-color: #eae7de;
@@ -620,6 +588,7 @@ header{
 }
 .social-media{
     padding: 20px 0;
+    background-color: #000;
 }
 .media-title{
     text-align: center;
@@ -637,6 +606,7 @@ header{
     position: relative;
 img{
     transition: 0.8s;
+    width: 100%;
 }
     &:hover{
         transform: rotate(360deg);
@@ -650,6 +620,7 @@ img{
         }
     }
 }
+
 .media-insta{
     display: none;
     background-image: url('/assets/Img/gradient-bg.png');
@@ -678,7 +649,6 @@ img{
     .d-flex{
         flex-direction: column;
         justify-content: space-around;
-        
         width: 100%;
     }
    
@@ -733,4 +703,114 @@ img{
     img{
         margin-top: 10px;
     }
+}
+// Menu page
+.details-menu{
+    display: block;
+}
+.coffee-title{
+      text-align: center;
+      font: oblique;
+      p{
+        font-size: 20px;
+        color:#e5a418
+      }
+}
+.coffee-list{
+    padding: 35px 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    h4{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px dashed #ccc;
+        padding-bottom: 10px;
+    }
+    span{
+        color: #c19942;
+    }
+    p{
+        margin-top: 15px;
+        color: #c19942;
+    }
+}
+.cocktails-title{
+    text-align: center;
+    font: oblique;
+    p{
+        font-size: 20px;
+        color:#e5a418
+      }
+}
+.cocktails-list{
+  padding: 35px 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  h4{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px dashed #ccc;
+      padding-bottom: 10px;
+  }
+  span{
+      color: #c19942;
+  }
+  p{
+      margin-top: 15px;
+      color: #c19942;
+  }
+}
+.tea-title{
+    text-align: center;
+    font: oblique;
+    img{
+        width: 50%;
+    }
+    p{
+        font-size: 20px;
+        color:#e5a418
+      }
+}
+.tea-list{
+  padding: 35px 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  h4{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px dashed #ccc;
+      padding-bottom: 10px;
+  }
+  span{
+      color: #c19942;
+  }
+  p{
+      margin-top: 15px;
+      color: #c19942;
+  }
+}
+.cake-title{
+    img{
+        width: 50%;
+    }
+    text-align: center;
+    font: oblique;
+    p{
+        font-size: 20px;
+        color:#e5a418
+      }
+}
+.cake-list{
+  padding: 35px 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  h4{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px dashed #ccc;
+      padding-bottom: 10px;
+  }
+  span{
+      color: #c19942;
+  }
+  p{
+      margin-top: 15px;
+      color: #c19942;
+  }
 }

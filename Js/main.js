@@ -4,6 +4,7 @@ $('.slick-slider').slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 1,
+  infinite: true,
   responsive: [
     {
       breakpoint: 1024,
@@ -39,6 +40,7 @@ $('.slick-blog').slick({
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
+  infinite: true,
   responsive: [
     {
       breakpoint: 1024,

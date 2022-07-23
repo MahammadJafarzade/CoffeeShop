@@ -844,4 +844,92 @@ header {
 .cake-list p {
   margin-top: 15px;
   color: #c19942;
+}
+
+.contactus {
+  padding: 50px 0;
+}
+
+.contact-us-title {
+  text-align: center;
+  font: oblique;
+}
+.contact-us-title h1 {
+  color: #c19942;
+}
+.contact-us-title p {
+  color: #816E6E;
+}
+
+.contactus-form-title h1 {
+  color: #c19942;
+}
+.contactus-form-title p {
+  color: #816E6E;
+}
+.contactus-form-title i {
+  font-size: 20px;
+}
+
+.contactus-form-inputs label {
+  display: block;
+}
+.contactus-form-inputs input {
+  padding: 12px 22px;
+  width: 100%;
+  background-color: #f8f8f8;
+  border: 1px solid #c7a17a;
+  border-radius: 12px;
+}
+
+.email input {
+  padding: 12px 10px;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 12px;
+  border: 1px solid #e5a418;
+  border-radius: 12px;
+  background-color: #f8f8f8;
+  font-size: 20px;
+  resize: none;
+}
+
+.forum-btn button {
+  padding: 13px 20px;
+  background-color: black;
+  border-radius: 12px;
+  border: none;
+  transition: 0.8s;
+}
+.forum-btn button a {
+  transition: 0.8s;
+  text-decoration: none;
+  color: wheat;
+}
+.forum-btn button:hover {
+  opacity: 0.9;
+}
+.forum-btn button:hover a {
+  color: white;
+}
+
+.contactaddress h1 {
+  color: #c19942;
+}
+.contactaddress h2 {
+  color: #c19942;
+}
+.contactaddress p {
+  color: #816E6E;
+}
+
+.openninghours-list ul {
+  list-style-type: none;
+}
+.openninghours-list ul li {
+  color: #816E6E;
 }/*# sourceMappingURL=main.css.map */

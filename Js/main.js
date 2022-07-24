@@ -105,3 +105,4 @@ $('.media-info').slick({
     // instead of a settings object
   ]
 });
+

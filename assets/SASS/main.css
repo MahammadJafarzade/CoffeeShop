@@ -7,9 +7,6 @@
 html, body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   scroll-behavior: smooth;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 header {
@@ -169,10 +166,10 @@ header {
   color: wheat;
   font-size: 1.3rem;
   text-decoration: none;
+  transition: 0.4s;
 }
 #hamburger-menu a:hover {
   color: #c19942;
-  transition: 0.4s;
   padding-left: 5px;
   border-left: 3px solid wheat;
 }
@@ -202,7 +199,7 @@ header {
 }
 
 .category-menu {
-  padding-top: 20px;
+  padding: 20px 0;
 }
 .category-menu ul {
   display: flex;
@@ -222,8 +219,10 @@ header {
   padding-left: 18px;
   font-size: 18px;
 }
-.category-menu li:hover {
+.category-menu li {
   transition: 0.8s;
+}
+.category-menu li:hover {
   filter: sepia(1);
 }
 

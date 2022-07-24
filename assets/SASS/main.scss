@@ -6,9 +6,6 @@
 html,body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     scroll-behavior: smooth;
-    text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 header{
     position: sticky;
@@ -176,9 +173,9 @@ header{
   color: wheat;
   font-size: 1.3rem;
   text-decoration: none;
+  transition: 0.4s;
   &:hover{
     color: #c19942;
-    transition: 0.4s;
     padding-left: 5px;
     border-left:3px solid  wheat;
     }
@@ -207,7 +204,7 @@ header{
 
 }
 .category-menu{
-    padding-top: 20px;
+    padding: 20px 0;
     ul{
         display: flex;
         justify-content: space-evenly;
@@ -229,8 +226,8 @@ header{
         }
     }
     li{
+        transition: 0.8s;
         &:hover{
-            transition: 0.8s;
             filter: sepia(1);
         }
     }
@@ -620,7 +617,6 @@ img{
         }
     }
 }
-
 .media-insta{
     display: none;
     background-image: url('/assets/Img/gradient-bg.png');
@@ -651,7 +647,6 @@ img{
         justify-content: space-around;
         width: 100%;
     }
-   
 }
 .footer{
     background-image: url('/assets/Img/footer-bg.jpg');
@@ -814,6 +809,7 @@ img{
       color: #c19942;
   }
 }
+//Contact page
 .contactus{
     padding: 50px 0;
 }

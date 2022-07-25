@@ -92,7 +92,7 @@ header{
         }
     }
 }
-.shop{
+.nav-shop{
     &:hover .drop-shop{
         display: flex;
         flex-direction: column;
@@ -488,6 +488,9 @@ header{
         padding-top: 10px;
     }
 }
+.shop{
+    padding: 10px 25px;
+}
 .shop-title{
     h2,h4{
         text-align: center;
@@ -511,7 +514,7 @@ header{
 }
 .blogs{
     background-color: #eae7de;
-    padding: 50px 0;
+    padding: 50px 25px;
 }
 .blog-title{
     text-align: center;
@@ -584,7 +587,7 @@ header{
     text-align: center;
 }
 .social-media{
-    padding: 20px 0;
+    padding: 20px 44px;
     background-color: #000;
 }
 .media-title{
@@ -900,5 +903,10 @@ textarea{
         li{
             color: #816E6E;
         }
+    }
+}
+.inner-blog-img{
+    img{
+        width: 100%;
     }
 }

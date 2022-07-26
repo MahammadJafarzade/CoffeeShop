@@ -422,6 +422,7 @@ header{
 }
 .item{
     display: flex;
+    margin: 5px 0;
 }
 .item-image{
     display: flex;
@@ -509,9 +510,6 @@ header{
         padding: 5px 0;
     }
 }
-.slick-slide{
-    width: 0;
-}
 .blogs{
     background-color: #eae7de;
     padding: 50px 25px;
@@ -521,6 +519,7 @@ header{
     font: oblique;
 }
 .blog-info{
+    margin: 3px 0;
     background-color: white;
     border-radius: 18px;
     padding: 0;
@@ -529,20 +528,20 @@ header{
     img{
         border-radius: 18px;
         width: 100%;
-        padding: 8px 0;
+        height: 30vh;
+        margin: 8px 0;
     }
 }
 .blog-description{
-    padding-left: 6px;
     i{
         padding-right: 8px;
     }
     p{
-        margin: 20px 0;
+        margin: 2px 0;
         a{
             padding: 10px 0;
             color: #e5a418;
-            font-size: 25px;
+            font-size: 20px;
             &:hover{
                 text-decoration: none;
                 opacity: 0.8;
@@ -651,6 +650,7 @@ img{
         width: 100%;
     }
 }
+// Footer Start
 .footer{
     background-image: url('/assets/Img/footer-bg.jpg');
     background-attachment: fixed;
@@ -702,6 +702,7 @@ img{
         margin-top: 10px;
     }
 }
+// End Footer
 // Menu page
 .details-menu{
     display: block;
@@ -817,7 +818,6 @@ img{
     padding: 50px 0;
 }
 .contact-us-title{
-    
     text-align: center;
     font: oblique;
     h1{
@@ -905,8 +905,86 @@ textarea{
         }
     }
 }
+//Blog page
+.inner-blogs{
+    padding: 30px 0;
+}
 .inner-blog-img{
     img{
+        margin: 8px 0;
         width: 100%;
+        border-radius: 25px;
+        box-shadow: 2px 2px 2px 0;
+        box-shadow: wheat;
+    }
+}
+.inner-blog-description{
+    margin: 8px 0;
+    border-radius: 25px;
+    border: 2px solid #c19942;
+    a{
+        padding: 10px 0;
+        color: #e5a418;
+        font-size: 25px;
+        &:hover{
+            text-decoration: none;
+            opacity: 0.8;
+        }
+    }
+}
+//Inner-blogs
+.post-blog{
+    padding: 20px 0;
+    border-radius: 12px;
+}
+.post-blog-bg{
+    img{
+       width: 100%;
+       margin: 0;
+       height: 70vh;
+       border-radius: 12px;
+    }
+}
+.post-blog-title{
+    p{
+        color: #816E6E;
+    }
+    h2{
+        color: #e5a418;
+    }
+}
+.inner-login{
+    padding: 10px 0;
+    margin: 90px;
+    label{
+        display: block;
+    }
+    input{
+        padding: 12px 22px;
+        width: 100%;
+        background-color: #f8f8f8;
+        border: 1px solid #c7a17a;
+        border-radius: 12px;        
+    }
+}
+.login-button{
+    button{
+        margin: 10px;
+        padding: 13px 20px;
+        background-color: black;
+        border-radius: 12px;
+        border: none;
+        transition: 0.8s;
+        a{
+            transition: 0.8s;
+            text-decoration: none;
+            color: wheat;     
+        }
+        &:hover{
+            opacity: 0.9;
+            a{
+                color: white;
+            }
+        }
     }
 }

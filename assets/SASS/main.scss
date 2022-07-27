@@ -955,7 +955,7 @@ textarea{
 }
 .inner-login{
     padding: 10px 0;
-    margin: 90px;
+    margin: 50px;
     label{
         display: block;
     }
@@ -968,6 +968,9 @@ textarea{
     }
 }
 .login-button{
+    a{
+        text-decoration: none;
+    }
     button{
         margin: 10px;
         padding: 13px 20px;
@@ -986,5 +989,28 @@ textarea{
                 color: white;
             }
         }
+    }
+}
+.inner-shop{
+    padding: 50px 0;
+}
+.inner-categories{
+    background-color: #f4f2ed;
+    padding: 38px 28px;
+    border-radius: 12px;
+    color: #e5a418;
+    a{
+        color: #816E6E;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+}
+.shop-product{
+    border: 1px solid #e5a418;
+    border-radius: 12px;
+    img{
+        width: 100%;
     }
 }

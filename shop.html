@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,10 +22,97 @@
     <link rel="stylesheet" href="./assets/SASS/main.css">
 </head>
 <body>
+     <!-- Start header -->
+ <header>
+    <div class="info-line">
+        <div class="info">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="line">
+            <a href="#">
+                <i class="fa-solid fa-phone"></i>
+                <span>051-313-47-94</span>
+            </a>
+        </div>
+    </div>
+    <div class="navigationbar container">
+        <div class="nav">
+            <a href="index.html"><img src="./assets/Img/logo (1).png"></a>
+            <ul class="details">
+                <li>
+                    <a href="menu.html">
+                        Menu</a>
+                </li>
+                <li class="nav-shop">
+                    <a href="shop.html">
+                        Shop</a>
+                    <div class="drop-shop">
+                        <a href="#" class="clinks">
+                            Tools for Barista
+                        </a>
+                        <a href="#" class="clinks">
+                            Capsule Coffees
+                        </a>
+                        <a href="#" class="clinks">
+                            America Coffees
+                        </a>
+                        <a href="#" class="clinks">
+                            Ethiopia Coffees
+                        </a>
+                        <a href="#" class="clinks">
+                            Kenya Coffees
+                        </a>
+                        <a href="#" class="clinks">
+                            Colombia Coffees
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <input type="checkbox" id="hamburger-input" class="burger-shower" />
+        <label id="hamburger-menu" for="hamburger-input">
+            <nav id="sidebar-menu">
+                <ul>
+                    <li><a href="index.html"><img src="./assets/Img/logo (1).png"></a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </label>
+        <div class="bar">
+            <ul>
+                <a href="#">
+                    <li>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span>0.00$</span>
+                    </li>
+                </a>
+                <a href="log-in.html">
+                    <li>
+                        <i class="fa-regular fa-user"></i>
+                        <span>Log in</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- End header -->
     <div class="container">
         <div class="row inner-shop">
             <div class="inner-categories col-lg-3">
-                <h3>Categories</h3>
+                <h2>Categories</h2>
                 <ul>
                     <li><a href="#">Tools for Barista</a></li>
                     <li><a href="#">Capsule Coffees</a></li>
@@ -33,19 +121,162 @@
                     <li><a href="#">Kenya</a></li>
                     <li><a href="#">Colombia</a></li>
                 </ul>
+                <div class="price-range">
+                    <h3>Price Range</h3>
+                    <div class="range-slider">
+                        <span class="range-values"></span>
+                        <input type="range" value="0" min="0" max="1000" step="1">
+                        <input type="range" value="1000" min="0" max="1000" step="1">
+                    </div>
+                </div>
+              <button class="filter-price">Filter</button>
             </div>
-            
-            <div class="shop-products col-lg-9">
-                <div class="shop-product col-lg-3">
+            <div class="shop-products col-lg-9 row">
+                <div class="shop-product col-md-3 col-sm-4 col-xs-12">
                     <a href="#"><img src="./assets/Img/918838ce4921f4ee7834c953155e4311.png"></a>
-                    <p>Steel kettle with heat sensor</p>
-                    <p>50$</p>
+                    <h5>Steel kettle with heat sensor</h5>
+                    <h5>50$<h5>
+                    <div class="button-overlay">
+                        <a href="#">
+                            <button class="add-button">View Fullpage</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="shop-product col-md-3 col-sm-4 col-xs-12">
+                    <a href="#"><img src="./assets/Img/a799866ae70f34eb347489f01ce0dd0d.png"></a>
+                    <h5>Temper Classix Pro,Black,58.4MM</h5>
+                    <h5>40$</h5>
+                    <div class="button-overlay">
+                        <a href="#">
+                            <button class="add-button">View Fullpage</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="shop-product col-md-3 col-sm-4 col-xs-12">
+                    <a href="#"><img src="./assets/Img/7d745ad7ad7876141a253f9bbacd2a98.png"></a>
+                    <h5>Pitcher Classix Pro,Steel,1000ML</h5>
+                    <h5>20$</h5>
+                    <div class="button-overlay">
+                        <a href="#">
+                            <button class="add-button">View Fullpage</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="shop-product col-md-3 col-sm-4 col-xs-12">
+                    <a href="#"><img src="./assets/Img/dca112d675c129ca9306962728fac4dd.png"></a>
+                    <h5>KNOCKBOX CLASSİX PRO(170*170*175)</h5>
+                    <h5>45$</h5>
+                    <div class="button-overlay">
+                        <a href="#">
+                            <button class="add-button">View Fullpage</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="shop-product col-md-3 col-sm-4 col-xs-12">
+                    <a href="#"><img src="./assets/Img/0a0de6ab4e2fd3d96fe88c087b48b994.png"></a>
+                    <h5>Straightener, Classix Pro, Black 58.4MM</h5>
+                    <h5>20$</h5>
+                    <div class="button-overlay">
+                        <a href="#">
+                            <button class="add-button">View Fullpage</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="shop-product col-md-3 col-sm-4 col-xs-12">
+                    <a href="#"><img src="./assets/Img/ac1f3e2323686678db3ba77a05a43040.png"></a>
+                    <h5>Paper Filter,Filtpora, 04/40</h5>
+                    <h5>5$</h5>
+                    <div class="button-overlay">
+                        <a href="#">
+                            <button class="add-button">View Fullpage</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="shop-product col-md-3 col-sm-4 col-xs-12">
+                    <a href="#"><img src="./assets/Img/4799231045e73470deb7ed46bea0a4c8.png"></a>
+                    <h5>Espresso Blend №17</h5>
+                    <h5>6.50$</h5>
+                    <div class="button-overlay">
+                        <a href="#">
+                            <button class="add-button">View Fullpage</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="shop-product col-md-3 col-sm-4 col-xs-12">
+                    <a href="#"><img src="./assets/Img/58b4ffbfa3f90bb6b01e08192d6c1aee.png"></a>
+                    <h5>Espresso Blend №8 Black Edition</h5>
+                    <h5>6$</h5>
+                    <div class="button-overlay">
+                        <a href="#">
+                            <button class="add-button">View Fullpage</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="shop-product col-md-3 col-sm-4 col-xs-12">
+                    <a href="#"><img src="./assets/Img/4237922e6a7c11fb5b7d98858569130b.png"></a>
+                    <h5>Espresso Brazil Matiqueira Black Edition</h5>
+                    <h5>8$</h5>
+                    <div class="button-overlay">
+                        <a href="#">
+                            <button class="add-button">View Fullpage</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  <!-- Start Footer -->
+  <footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row  d-flex">
+                <div class="info-despina col-lg-3">
                     <a href="#">
-                        <button>Add to cart</button>
+                        <img src="./assets/Img/logo (1).png">
+                    </a>
+                    <p>We have a hankering for some really in good melt in a mouth variety. Floury is the best
+                        choice to
+                        taste food and dessert.</p>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="contact-despina col-lg-3">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>329 Queensberry Street, North Melbourne</li>
+                        <li>VIC 3051, Australia.</li>
+                        <li>(+994)51-313-47-94</li>
+                        <li>sulpport@despina.com</li>
+                    </ul>
+                </div>
+                <div class="openning-hour col-lg-3">
+                    <h4>Opening Hour</h4>
+                    <ul>
+                        <li>Monday - Friday: ........10am - 08pm</li>
+                        <li>Saturday: ........11am - 06pm</li>
+                        <li>Sunday: ........Closed</li>
+                        <li>*Close on special days</li>
+                    </ul>
+                </div>
+                <div class="despina-video col-lg-3">
+                    <h4>Despina Video</h4>
+                    <a href="#">
+                        <img src="./assets/Img/video-bg.png" alt="">
                     </a>
                 </div>
             </div>
         </div>
     </div>
+</footer>
+<!-- End Footer -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./Js/main.js"></script>
 </body>
 </html>

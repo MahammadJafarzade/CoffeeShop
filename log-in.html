@@ -23,159 +23,163 @@
 </head>
 
 <body>
-    <!-- Start header -->
-    <header>
-        <div class="info-line">
-            <div class="info">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-            <div class="line">
-                <a href="#">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>051-313-47-94</span>
-                </a>
-            </div>
+ <!-- Start header -->
+ <header>
+    <div class="info-line">
+        <div class="info">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
-        <div class="navigationbar container">
-            <div class="nav">
-                <a href="index.html"><img src="./assets/Img/logo (1).png"></a>
-                <ul class="details">
-                    <li>
-                        <a href="menu.html">
-                            Menu</a>
-                    </li>
-                    <li class="nav-shop">
-                        <a href="#">
-                            Shop</a>
-                        <div class="drop-shop">
-                            <a href="#" class="clinks">
-                                Web Development
-                            </a>
-                            <a href="#" class="clinks">
-                                Mobile Apps
-                            </a>
-
-                            <a href="#" class="clinks">
-                                UI / UX
-                            </a>
-                            <a href="#" class="clinks">
-                                Database
-                            </a>
-
-                        </div>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <input type="checkbox" id="hamburger-input" class="burger-shower" />
-            <label id="hamburger-menu" for="hamburger-input">
-                <nav id="sidebar-menu">
-                    <ul>
-                        <li><a href="index.html"><img src="./assets/Img/logo (1).png"></a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </label>
-            <div class="bar">
+        <div class="line">
+            <a href="#">
+                <i class="fa-solid fa-phone"></i>
+                <span>051-313-47-94</span>
+            </a>
+        </div>
+    </div>
+    <div class="navigationbar container">
+        <div class="nav">
+            <a href="index.html"><img src="./assets/Img/logo (1).png"></a>
+            <ul class="details">
+                <li>
+                    <a href="menu.html">
+                        Menu</a>
+                </li>
+                <li class="nav-shop">
+                    <a href="shop.html">
+                        Shop</a>
+                    <div class="drop-shop">
+                        <a href="#" class="clinks">
+                            Tools for Barista
+                        </a>
+                        <a href="#" class="clinks">
+                            Capsule Coffees
+                        </a>
+                        <a href="#" class="clinks">
+                            America Coffees
+                        </a>
+                        <a href="#" class="clinks">
+                            Ethiopia Coffees
+                        </a>
+                        <a href="#" class="clinks">
+                            Kenya Coffees
+                        </a>
+                        <a href="#" class="clinks">
+                            Colombia Coffees
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <input type="checkbox" id="hamburger-input" class="burger-shower" />
+        <label id="hamburger-menu" for="hamburger-input">
+            <nav id="sidebar-menu">
                 <ul>
-                    <a href="#">
-                        <li>
-                            <i class="fa-solid fa-basket-shopping"></i>
-                            <span>0.00$</span>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li>
-                            <i class="fa-regular fa-user"></i>
-                            <span>Register</span>
-                        </li>
-                    </a>
+                    <li><a href="index.html"><img src="./assets/Img/logo (1).png"></a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
+        </label>
+        <div class="bar">
+            <ul>
+                <a href="#">
+                    <li>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span>0.00$</span>
+                    </li>
+                </a>
+                <a href="log-in.html">
+                    <li>
+                        <i class="fa-regular fa-user"></i>
+                        <span>Log in</span>
+                    </li>
+                </a>
+            </ul>
         </div>
-    </header>
-    <!-- End header -->
+    </div>
+</header>
+<!-- End header -->
     <div class="container">
         <div class="inner-login row">
-            <div class="login-firstname col-lg-4">
-                <label for="name">Firstname</label>
-                <input type="text" placeholder="Firstname">
-            </div>
-            <div class="login-lastname col-lg-4">
-                <label for="lastname">Lastname</label>
-                <input type="text" placeholder="Lastname">
-            </div>
-            <div class="login-email col-lg-8">
+            <div class="login-email col-md-5">
                 <label for="email">Email</label>
                 <input type="text" placeholder="Email">
+            </div>
+            <div class="login-password col-md-5">
+                <label for="password">Password</label>
+                <input type="text" placeholder="Password">
             </div>
             <div class="login-button">
                 <button>
                     <a href="index.html">Login</a>
                 </button>
-                <span>If you don't have account so click <a href="#">Register</a></span>
+                <span>If you don't have account so click <a href="register.html">Register</a></span>
             </div>
         </div>
     </div>
-    <!-- Start Footer -->
-    <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="row  d-flex">
-                    <div class="info-despina col-lg-3">
-                        <a href="#">
-                            <img src="./assets/Img/logo (1).png">
-                        </a>
-                        <p>We have a hankering for some really in good melt in a mouth variety. Floury is the best
-                            choice to
-                            taste food and dessert.</p>
-                        <ul>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="contact-despina col-lg-3">
-                        <h4>Contact</h4>
-                        <ul>
-                            <li>329 Queensberry Street, North Melbourne</li>
-                            <li>VIC 3051, Australia.</li>
-                            <li>(+994)51-313-47-94</li>
-                            <li>sulpport@despina.com</li>
-                        </ul>
-                    </div>
-                    <div class="openning-hour col-lg-3">
-                        <h4>Opening Hour</h4>
-                        <ul>
-                            <li>Monday - Friday: ........10am - 08pm</li>
-                            <li>Saturday: ........11am - 06pm</li>
-                            <li>Sunday: ........Closed</li>
-                            <li>*Close on special days</li>
-                        </ul>
-                    </div>
-                    <div class="despina-video col-lg-3">
-                        <h4>Despina Video</h4>
-                        <a href="#">
-                            <img src="./assets/Img/video-bg.png" alt="">
-                        </a>
-                    </div>
+  <!-- Start Footer -->
+  <footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row  d-flex">
+                <div class="info-despina col-lg-3">
+                    <a href="#">
+                        <img src="./assets/Img/logo (1).png">
+                    </a>
+                    <p>We have a hankering for some really in good melt in a mouth variety. Floury is the best
+                        choice to
+                        taste food and dessert.</p>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="contact-despina col-lg-3">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>329 Queensberry Street, North Melbourne</li>
+                        <li>VIC 3051, Australia.</li>
+                        <li>(+994)51-313-47-94</li>
+                        <li>sulpport@despina.com</li>
+                    </ul>
+                </div>
+                <div class="openning-hour col-lg-3">
+                    <h4>Opening Hour</h4>
+                    <ul>
+                        <li>Monday - Friday: ........10am - 08pm</li>
+                        <li>Saturday: ........11am - 06pm</li>
+                        <li>Sunday: ........Closed</li>
+                        <li>*Close on special days</li>
+                    </ul>
+                </div>
+                <div class="despina-video col-lg-3">
+                    <h4>Despina Video</h4>
+                    <a href="#">
+                        <img src="./assets/Img/video-bg.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- End Footer -->
+    </div>
+</footer>
+<!-- End Footer -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./Js/main.js"></script>
 </body>
 
 </html>

@@ -128,7 +128,9 @@ window.onload=function(){
     }
   }
 }
-
+AOS.init({
+  duration: 2200,
+});
  //Get the button
  var mybutton = document.getElementById("myBtn");
         

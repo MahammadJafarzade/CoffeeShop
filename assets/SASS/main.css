@@ -391,6 +391,7 @@ header {
   width: auto;
   color: white;
   font-style: oblique;
+  transition: 0.7s;
 }
 .description i {
   font-size: 30px;
@@ -402,15 +403,11 @@ header {
   width: -moz-fit-content;
   width: fit-content;
 }
-
-.gifts {
-  transition: 0.7s;
-}
-.gifts img {
+.description img {
   max-width: 100%;
   border-radius: 15px;
 }
-.gifts:hover {
+.description:hover {
   opacity: 0.7;
   transform: scale(0.9);
 }

@@ -129,7 +129,7 @@ window.onload=function(){
   }
 }
 AOS.init({
-  duration: 2200,
+  duration: 2000,
 });
  //Get the button
  var mybutton = document.getElementById("myBtn");

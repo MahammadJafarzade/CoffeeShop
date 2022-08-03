@@ -387,6 +387,7 @@ header{
     width: auto;
     color: white;
     font-style: oblique;
+    transition: 0.7s;
     i{
         font-size: 30px;
         color: #c19942;
@@ -395,9 +396,6 @@ header{
     h2{
         width: fit-content;
     }
-}
-.gifts{
-    transition: 0.7s;
     img{
         max-width: 100%;
         border-radius: 15px;

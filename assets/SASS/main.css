@@ -54,9 +54,6 @@
 }
 
 header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   border-bottom: 1px solid #ffe2a4;
   padding-bottom: 5px;
   background-color: #c19942;
@@ -361,6 +358,15 @@ header {
 .inner-blog-description a:hover {
   text-decoration: none;
   opacity: 0.8;
+}
+
+.post-blog {
+  padding: 10px 0;
+}
+
+.post-blog-bg img {
+  width: 100%;
+  border-radius: 12px;
 }
 
 .contactus {
@@ -696,6 +702,11 @@ textarea {
   color: wheat;
 }
 
+.d-block {
+  background-image: url("/assets/Img/bg1.jpg");
+  height: 700px;
+}
+
 #category {
   background-color: #c19942;
 }
@@ -812,6 +823,9 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex;
+  }
   .category-menu {
     display: none;
   }

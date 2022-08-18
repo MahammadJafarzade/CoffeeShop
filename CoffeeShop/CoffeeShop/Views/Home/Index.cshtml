@@ -1,4 +1,5 @@
 ﻿
+@model HomeVM
 @{
     ViewData["Title"] = "Index";
 }
@@ -7,22 +8,22 @@
     <div id="category">
         <div class="category-menu container">
             <ul>
-                <li><a href="#"><img src="~/./assets/Img/coffee.png"><span>Coffee</span></a></li>
-                <li><a href="#"><img src="~/./assets/Img/cocktail.png"><span>Cocktail</span></a></li>
-                <li><a href="#"><img src="~/./assets/Img/tea.png"><span>Tea</span></a></li>
-                <li><a href="#"><img src="~/./assets/Img/cake.png"><span>Cake</span></a></li>
+                @foreach (var categories in Model.Categories)
+                {
+                    <li><a href="#"><img src="~/./assets/Img/@categories.Image"><span>@categories.Name</span></a></li>
+                }
             </ul>
         </div>
         <div class="hamburger-menu">
-            <input id="menu-toggle" type="checkbox" />
+            <input id="menu-toggle" type="checkbox"/>
             <label class='menu-button-container' for="menu-toggle">
                 <div class='menu-button'></div>
             </label>
             <ul class="menu">
-                <li><a href="#"><img src="~/./assets/Img/coffee.png"><span>Coffee</span></a></li>
-                <li><a href="#"><img src="~/./assets/Img/cocktail.png"><span>Cocktail</span></a></li>
-                <li><a href="#"><img src="~/./assets/Img/tea.png"><span>Tea</span></a></li>
-                <li><a href="#"><img src="~/./assets/Img/cake.png"><span>Cake</span></a></li>
+                @foreach (var categories in Model.Categories)
+                {
+                    <li><a href="#"><img src="~/./assets/Img/@categories.Image"><span>@categories.Name</span></a></li>
+                }
             </ul>
         </div>
         <!-- End Category section -->
@@ -37,13 +38,13 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active first-slider">
-                <img class="d-block w-100 " src="~/./assets/Img/bg1.jpg" alt="First slide">
+                <img class="d-block w-100" src="~/./assets/Img/coffee-1572741_960_720.png" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="~/./assets/Img/bg1.jpg" alt="Second slide">
+                <img class="d-block w-100" src="~/./assets/Img/coffee-1572739_960_720.png"  alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="~/./assets/Img/bg1.jpg" alt="Third slide">
+                <img class="d-block w-100" src="~/./assets/Img/coffee-1572738_960_720.png"  alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -60,20 +61,16 @@
     <section id="discounts">
         <div class="opportunities container">
             <div class="row">
-                <div class="discount col-md-6">
-                    <img src="~/./assets/Img/cappuccino-with-croissant_87414-3069.jpg">
-                    <div class="description">
-                        <i class="fa-solid fa-gift"></i>
-                        <h2>Buy Cappuccino get Croissant</h2>
+                @foreach (var discounts in Model.Discounts)
+                {
+                    <div class="discount col-md-6">
+                        <img src="~/./assets/Img/@discounts.Image">
+                        <div class="description">
+                            <i class="fa-solid fa-gift"></i>
+                            <h2>@discounts.Discdescription</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="discount col-md-6">
-                    <img src="~/./assets/Img/ice-coffee-tall-glass-with-cream_79782-44.webp">
-                    <div class="description">
-                        <i class="fa-solid fa-gift"></i>
-                        <h2>Iced Coffees 1+1 for students</h2>
-                    </div>
-                </div>
+                }
             </div>
         </div>
     </section>
@@ -87,90 +84,23 @@
             </div>
             <div class="container">
                 <div class="inner-menu row" data-aos="fade-up">
+                    @foreach (var menu in Model.MenuProducts)
+                    {
                     <div class="item col-md-6">
                         <div class="item-image">
-                            <img src="~/./assets/Img/item1.png">
+                            <img src="~/./assets/Img/@menu.ProductImage">
                         </div>
                         <div class="item-description">
                             <div class="title">
-                                <h5>Latte</h5>
-                                <span>$5.00</span>
+                                <h5>@menu.ProductName</h5>
+                                <span>$@menu.ProductPrice.ToString("0.00")</span>
                             </div>
                             <div class="inner-coffee">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p>@menu.ProductDescription</p>
                             </div>
                         </div>
                     </div>
-                    <div class="item col-md-6">
-                        <div class="item-image">
-                            <img src="~/./assets/Img/item2.png">
-                        </div>
-                        <div class="item-description">
-                            <div class="title">
-                                <h5>Iced Latte</h5>
-                                <span>$6.00</span>
-                            </div>
-                            <div class="inner-coffee">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item col-md-6">
-                        <div class="item-image">
-                            <img src="~/./assets/Img/item3.png">
-                        </div>
-                        <div class="item-description">
-                            <div class="title">
-                                <h5>Iced Americano</h5>
-                                <span>$7.00</span>
-                            </div>
-                            <div class="inner-coffee">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item col-md-6">
-                        <div class="item-image">
-                            <img src="~/./assets/Img/item4.png">
-                        </div>
-                        <div class="item-description">
-                            <div class="title">
-                                <h5>Americano</h5>
-                                <span>$4.00</span>
-                            </div>
-                            <div class="inner-coffee">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item col-md-6">
-                        <div class="item-image">
-                            <img src="~/./assets/Img/item5.png">
-                        </div>
-                        <div class="item-description">
-                            <div class="title">
-                                <h5>White Chocolate Mocha</h5>
-                                <span>$15.00</span>
-                            </div>
-                            <div class="inner-coffee">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item col-md-6">
-                        <div class="item-image">
-                            <img src="~/./assets/Img/item6.png">
-                        </div>
-                        <div class="item-description">
-                            <div class="title">
-                                <h5>Cappuccino</h5>
-                                <span>$5.00</span>
-                            </div>
-                            <div class="inner-coffee">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
+                    }
                 </div>
             </div>
             <div class="fullmenu-button">
@@ -247,112 +177,27 @@
                     <h2>Our blogs</h2>
                 </div>
                 <div class="slick-blog" data-aos="fade-up">
-                    <div class="blog-info col-11">
-                        <div class="blog-image col-md-12">
-                            <a href="Post-Roast.html">
-                                <img src="~/./assets/Img/Quaker-Sorting-01-Header.jpg ">
-                            </a>
+                    @foreach (var item in Model.Blogs)
+                    {
+                        <div class="blog-info col-11">
+                            <div class="blog-image col-md-12">
+                                <a href="Post-Roast.html">
+                                    <img src="~/./assets/Img/@item.Image ">
+                                </a>
+                            </div>
+                            <div class="blog-description col-md-12">
+                                <span><i class="fa-regular fa-user"></i>@item.Author</span>
+                                <p>@item.Date</p>
+                                <p><a href="/Post-Roast.html">@item.Title</a></p>
+                                <p>
+                                    @item.Description
+                                </p>
+                                <p><a href="/Blog/Details/@item.Id" >Read more <i class="fa-solid fa-arrow-right"></i></a></p>
+                                @*<a asp-controller="BlogController" asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-inverse btn-outline-inverse"><i class="fas fa-eye"></i></a>
+                                 <input id="docActionId" asp-for="@item.Id" type="hidden" value="initialValue" />*@
+                            </div>
                         </div>
-                        <div class="blog-description col-md-12">
-                            <span><i class="fa-regular fa-user"></i>By Vishal Patel</span>
-                            <p>10 June 2022</p>
-                            <p><a href="/Post-Roast.html">Post-Roast Sorting</a></p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorem laboriosam,
-                                reiciendis tempora aliquid debitis nesciunt voluptas...
-                            </p>
-                            <p><a href="/Post-Roast.html">Read more <i class="fa-solid fa-arrow-right"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="blog-info col-11">
-                        <div class="blog-image col-md-12">
-                            <a href="Brazilian-coffee.html">
-                                <img src="~/./assets/Img/blog-4-359x235.jpg">
-                            </a>
-                        </div>
-                        <div class="blog-description col-md-12">
-                            <span><i class="fa-regular fa-user"></i>By Vishal Patel</span>
-                            <p>13 May 2022</p>
-                            <p><a href="/Brazilian-coffee.html">Getting the Best out of Brazilian Coffee</a></p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorem laboriosam,
-                                reiciendis tempora aliquid debitis nesciunt voluptas...
-                            </p>
-                            <p><a href="/Brazilian-coffee.html">Read more <i class="fa-solid fa-arrow-right"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="blog-info col-11">
-                        <div class="blog-image col-md-12">
-                            <a href="liked-sausage.html">
-                                <img src="~/./assets/Img/blog-6-339x300.jpg">
-                            </a>
-                        </div>
-                        <div class="blog-description col-md-12">
-                            <span><i class="fa-regular fa-user"></i>By Vishal Patel</span>
-                            <p>28 May 2022</p>
-                            <p><a href="/liked-sausage.html">HOW DO YOU LIKE YOUR SAUSAGE?</a></p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorem laboriosam,
-                                reiciendis tempora aliquid debitis nesciunt voluptas...
-                            </p>
-                            <p>
-                                <a href="/liked-sausage.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog-info col-11">
-                        <div class="blog-image col-md-12">
-                            <a href="idealpress.html">
-                                <img src="~/./assets/Img/blog-9-339x300.jpg">
-                            </a>
-                        </div>
-                        <div class="blog-description col-md-12">
-                            <span><i class="fa-regular fa-user"></i>By Vishal Patel</span>
-                            <p>1 June 2022</p>
-                            <p><a href="/idealpress.html">The Ideal Temperature for French Press</a></p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorem laboriosam,
-                                reiciendis tempora aliquid debitis nesciunt voluptas...
-                            </p>
-                            <p><a href="/idealpress.html">Read more <i class="fa-solid fa-arrow-right"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="blog-info col-11">
-                        <div class="blog-image col-md-12">
-                            <a href="bloom.html">
-                                <img src="~/./assets/Img/Bloom-Header-03-400x250.jpg">
-                            </a>
-                        </div>
-                        <div class="blog-description col-md-12">
-                            <span><i class="fa-regular fa-user"></i>By Vishal Patel</span>
-                            <p>21 Apr 2022</p>
-                            <p><a href="bloom.html">Blooming and Clogging</a></p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorem laboriosam,
-                                reiciendis tempora aliquid debitis nesciunt voluptas...
-                            </p>
-                            <p><a href="bloom.html">Read more <i class="fa-solid fa-arrow-right"></i></a></p>
-                        </div>
-                    </div>
-                    <div class="blog-info col-11">
-                        <div class="blog-image col-md-12">
-                            <a href="coffee-package.html">
-                                <img src="~/./assets/Img/Packing-Coffee-Header-1-400x250.jpg">
-                            </a>
-                        </div>
-                        <div class="blog-description col-md-12">
-                            <span><i class="fa-regular fa-user"></i>By Vishal Patel</span>
-                            <p>10 May 2022</p>
-                            <p><a href="coffee-package.html">Coffee Packaging</a></p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorem laboriosam,
-                                reiciendis tempora aliquid debitis nesciunt voluptas...
-                            </p>
-                            <p>
-                                <a href="coffee-package.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
-                            </p>
-                        </div>
-                    </div>
+                    }
                 </div>
             </div>
         </div>
@@ -370,54 +215,20 @@
                     </p>
                 </div>
                 <div class="allfutures row" data-aos="fade-up">
-                    <div class="future-description col-lg-3">
-                        <div class="future-title">
-                            <img src="~/./assets/Img/icon1.png">
-                            <h2>Coffee Maker</h2>
+                    @foreach (var futures in Model.Futures)
+                    {
+                        <div class="future-description col-lg-3">
+                            <div class="future-title">
+                                <img src="~/./assets/Img/@futures.Image">
+                                <h2>@futures.Title</h2>
+                            </div>
+                            <div class="future-content">
+                                <p>
+                                    @futures.Description
+                                </p>
+                            </div>
                         </div>
-                        <div class="future-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt
-                            </p>
-                        </div>
-                    </div>
-                    <div class="future-description col-lg-3">
-                        <div class="future-title">
-                            <img src="~/./assets/Img/icon2.png">
-                            <h2>Coffee Grinder</h2>
-                        </div>
-                        <div class="future-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt
-                            </p>
-                        </div>
-                    </div>
-                    <div class="future-description col-lg-3">
-                        <div class="future-title">
-                            <img src="~/./assets/Img/icon3.png">
-                            <h2>Coffee Cups</h2>
-                        </div>
-                        <div class="future-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt
-                            </p>
-                        </div>
-                    </div>
-                    <div class="future-description col-lg-3">
-                        <div class="future-title">
-                            <img src="~/./assets/Img/icon4.png">
-                            <h2>Espresso Machine</h2>
-                        </div>
-                        <div class="future-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt
-                            </p>
-                        </div>
-                    </div>
+                     }
                 </div>
             </div>
         </div>

@@ -201,7 +201,6 @@ header {
 }
 
 #hamburger-menu #sidebar-menu {
-  margin-top: 34px;
   visibility: hidden;
   position: fixed;
   top: 0;
@@ -265,9 +264,6 @@ header {
   border-radius: 12px;
 }
 
-.login-button a {
-  text-decoration: none;
-}
 .login-button button {
   margin: 10px;
   padding: 13px 20px;
@@ -275,17 +271,11 @@ header {
   border-radius: 12px;
   border: none;
   transition: 0.8s;
-}
-.login-button button a {
-  transition: 0.8s;
   text-decoration: none;
   color: wheat;
 }
 .login-button button:hover {
-  opacity: 0.9;
-}
-.login-button button:hover a {
-  color: white;
+  color: #f8f8f8;
 }
 
 .inner-register {
@@ -311,9 +301,6 @@ header {
   margin: 5px 0;
 }
 
-.register-button a {
-  text-decoration: none;
-}
 .register-button button {
   margin: 10px;
   padding: 13px 20px;
@@ -321,17 +308,11 @@ header {
   border-radius: 12px;
   border: none;
   transition: 0.8s;
-}
-.register-button button a {
-  transition: 0.8s;
   text-decoration: none;
   color: wheat;
 }
 .register-button button:hover {
-  opacity: 0.9;
-}
-.register-button button:hover a {
-  color: white;
+  color: #f8f8f8;
 }
 
 .inner-blogs {
@@ -1281,4 +1262,16 @@ html, body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+@media screen and (max-width: 768px) {
+  .product-details {
+    display: block;
+  }
+  .prod-details {
+    display: block;
+  }
+  .product {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

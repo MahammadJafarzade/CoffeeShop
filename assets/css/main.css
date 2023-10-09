@@ -484,6 +484,9 @@ textarea {
   padding: 35px 20px;
   font-family: "Source Sans Pro", sans-serif;
 }
+.cocktails-list img {
+  width: 100%;
+}
 .cocktails-list h4 {
   display: flex;
   justify-content: space-between;
@@ -533,7 +536,7 @@ textarea {
   font: oblique;
 }
 .cake-title img {
-  width: 50%;
+  width: 100%;
 }
 .cake-title p {
   font-size: 20px;
@@ -558,6 +561,11 @@ textarea {
   color: #c19942;
 }
 
+@media screen and (max-width: 568px) {
+  .details-menu img {
+    width: 100%;
+  }
+}
 .inner-shop {
   padding: 50px 0;
   display: flex;
@@ -889,7 +897,6 @@ textarea {
   margin-left: 4px;
 }
 .description h2 {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -908,7 +915,6 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -1042,12 +1048,12 @@ textarea {
 }
 @media screen and (max-width: 768px) {
   .blog-info {
-    height: 450px;
+    height: 500px;
   }
 }
 @media screen and (max-width: 368px) {
   .blog-info {
-    height: 460px;
+    height: 500px;
   }
 }
 .blog-image img {
@@ -1260,7 +1266,6 @@ html, body {
   color: #e5a418;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 

@@ -39,6 +39,9 @@
 .cocktails-list{
   padding: 35px 20px;
   font-family: 'Source Sans Pro', sans-serif;
+  img{
+    width: 100%;
+  }
   h4{
       display: flex;
       justify-content: space-between;
@@ -83,7 +86,7 @@
 }
 .cake-title{
     img{
-        width: 50%;
+        width: 100%;
     }
     text-align: center;
     font: oblique;
@@ -108,4 +111,12 @@
       margin-top: 15px;
       color: #c19942;
   }
+}
+@media screen and (max-width:568px)  {
+        .details-menu{
+            img{
+                width: 100%;
+            }
+        }
+
 }

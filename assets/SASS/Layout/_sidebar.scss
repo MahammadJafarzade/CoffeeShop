@@ -2,7 +2,6 @@
     display: none;
   }
   #hamburger-menu {
-      position: fixed;
       z-index: 24;
       top: 20px;
       left: 20px;
@@ -24,7 +23,6 @@
   }
   #hamburger-menu #sidebar-menu {
       visibility: hidden;
-      position: fixed;
       top: 0;
       left: -250px;
       width: 200px;

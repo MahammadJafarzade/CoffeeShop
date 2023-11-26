@@ -63,8 +63,6 @@ $('.slick-blog').slick({
     // instead of a settings object
   ]
 });
-
-
 $('.media-info').slick({
   dots: true,
   infinite: false,
@@ -209,3 +207,4 @@ rangeInput.forEach((input) => {
     }
   });
 });
+

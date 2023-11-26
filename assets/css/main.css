@@ -131,7 +131,6 @@ header {
 }
 .bar ul a li {
   list-style-type: none;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 18px;
   padding-left: 30px;
   color: white;
@@ -198,6 +197,7 @@ header {
 
 #hamburger-menu #sidebar-menu {
   visibility: hidden;
+  position: fixed;
   top: 0;
   left: -250px;
   width: 200px;

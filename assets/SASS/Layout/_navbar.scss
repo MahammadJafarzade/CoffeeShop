@@ -34,7 +34,6 @@
             text-decoration: none;
             li{
                 list-style-type: none;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 font-size: 18px;
                 padding-left: 30px;
                 color: white;     
@@ -78,7 +77,6 @@
     }
 }
 @media screen and (max-width: 768px) {
-
     .nav{
         display: none;
     }
